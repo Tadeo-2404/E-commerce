@@ -1,0 +1,68 @@
+@use 'base/variables'as v;
+@use 'base/mixins'as m;
+
+.reviews {
+    margin-top: 2rem;
+
+    h3.reviews__title {
+        font-size: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    h3.reviews__title::before {
+        content: "";
+        display: block;
+        height: 0.2rem;
+        width: 100%;
+        background-color: v.$azul;
+    }
+
+    h3.reviews__title::after {
+        content: "";
+        display: block;
+        height: 0.2rem;
+        width: 100%;
+        background-color: v.$azul;
+    }
+
+    .reviews__wrapper {
+        padding: 2rem;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 4rem;
+
+        @include m.tablet {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 4rem;
+        }
+
+        @include m.desktop {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 4rem;
+        }
+
+        .review-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+            }
+
+            .review-item__description {
+                text-align: center;
+            }
+        }
+    }
+}

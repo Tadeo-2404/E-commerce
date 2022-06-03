@@ -1,0 +1,145 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+nav {
+    
+    .nav-item__cart {
+        position: relative;
+    }
+    
+    .nav-item__wish {
+        position: relative;
+    }
+
+    @include m.tablet {
+        #cart-icon:hover + #cart{
+            display: block;
+        }
+
+        #cart:hover {
+            display: block;
+        }
+
+        #wish-icon:hover + #wish{
+            display: block;
+        }
+
+        #wish:hover {
+            display: block;
+        }
+
+        .navbar-brand {
+            order: 1;
+            margin-left: 3rem;
+        }
+
+        .icons-wrapper {
+            order: 3;
+        }
+
+        #collapsibleNavbar {
+            justify-content: center;
+            order: 2;
+        }    
+        
+        a.cart-link {
+            display: none;
+        }
+
+        a.wish-link {
+            display: none;
+        }
+    }
+
+    @include m.desktop {
+        #cart-icon:hover + #cart{
+            display: block;
+        }
+
+        #cart:hover {
+            display: block;
+        }
+
+        #wish-icon:hover + #wish{
+            display: block;
+        }
+
+        #wish:hover {
+            display: block;
+        }
+
+        .navbar-brand {
+            order: 1;
+        }
+
+        .icons-wrapper {
+            order: 3;
+        }
+
+        a.cart-link {
+            display: none;
+        }
+
+        a.wish-link {
+            display: none;
+        }
+    }
+
+    i {
+        font-size: 1.5rem;
+        color: v.$blanco;
+    }
+
+    @include m.telefono {
+        .navbar-brand {
+            order: 1;
+        }
+
+        .icons-wrapper {
+            order: 3;
+        }
+
+        #cart-icon {
+            display: none;
+        }
+
+        #wish-icon {
+            display: none;
+        }
+
+        a.cart-link {
+            display: block;
+        }
+
+        a.wish-link {
+            display: block;
+        }
+    }
+
+    .navbar-collapse {
+        order: 2;
+        max-width: fit-content;
+
+        @include m.tablet {
+            display: flex;
+            justify-content: flex-end;
+        
+            .navbar-nav {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @include m.desktop {
+            display: flex;
+            justify-content: flex-end;
+        
+            .navbar-nav {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

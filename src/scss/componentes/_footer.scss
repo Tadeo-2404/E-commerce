@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+footer.footer {
+    background-color: v.$negro;
+    color: v.$blanco;
+
+    .footer__wrapper {
+        padding: 2rem;
+
+        .footer__tags {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            @include m.tablet {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 5rem;
+            }
+
+            a {
+                color: v.$blanco;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            i {
+                font-size: 3rem;
+            }
+        }
+    }
+}

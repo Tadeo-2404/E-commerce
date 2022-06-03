@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.offer-section {
+    background: linear-gradient(90deg, rgba(130,130,130,0.5) 0%, rgba(130,130,130,0.5) 100%), url(/build/img/oferta1.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    .offer-section__wrapper {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        h2 {
+            color: v.$blanco;
+        }
+
+        p {
+            color: v.$blanco;
+        }
+
+        a {
+            text-decoration: none;
+            color: v.$blanco;
+        }
+    }
+}
+
+.offer-section:nth-of-type(3) {
+    background: linear-gradient(90deg, rgba(130,130,130,0.5) 0%, rgba(130,130,130,0.5) 100%), url(/build/img/oferta2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

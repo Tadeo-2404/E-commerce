@@ -1,0 +1,196 @@
+{
+    "productos": {
+        "computadoras": [
+            {
+                "id": "l-1",
+                "nombre": "Laptop XP 200",
+                "imagen": "build\\img\\laptop1.webp",
+                "precio": "1200"
+            },
+            {
+                "id": "l-2",
+                "nombre": "Laptop Acer",
+                "imagen": "build\\img\\laptop2.webp",
+                "precio": "4200"
+            },
+            {
+                "id": "l-3",
+                "nombre": "Laptop MacPro",
+                "imagen": "build\\img\\laptop3.webp",
+                "precio": "1900"
+            },
+            {
+                "id": "l-4",
+                "nombre": "Laptop Aricad XLS",
+                "imagen": "build\\img\\laptop4.webp",
+                "precio": "6000"
+            },
+            {
+                "id": "l-5",
+                "nombre": "Laptop Smart Touch",
+                "imagen": "build\\img\\laptop5.webp",
+                "precio": "5500"
+            }        
+        ],
+        "telefonos": [
+            {
+                "id": "t-1",
+                "nombre": "Smartphone Alpha",
+                "imagen": "build\\img\\telefono1.webp",
+                "precio": "400"
+            },
+            {
+                "id": "t-2",
+                "nombre": "Smartphone RSD",
+                "imagen": "build\\img\\telefono2.webp",
+                "precio": "400"
+            },
+            {
+                "id": "t-3",
+                "nombre": "Smartphone XC",
+                "imagen": "build\\img\\telefono3.webp",
+                "precio": "400"
+            },
+            {
+                "id": "t-4",
+                "nombre": "Smartphone Pro",
+                "imagen": "build\\img\\telefono4.webp",
+                "precio": "400"
+            },
+            {
+                "id": "t-5",
+                "nombre": "Smatphone ITS",
+                "imagen": "build\\img\\telefono5.webp",
+                "precio": "400"
+            }   
+        ],
+        "audifonos": [
+            {
+                "id": "a-1",
+                "nombre": "Audifonos XP 200",
+                "imagen": "build\\img\\audifonos1.webp",
+                "precio": "980"
+            },
+            {
+                "id": "a-2",
+                "nombre": "Audifonos Parasonic",
+                "imagen": "build\\img\\audifonos2.webp",
+                "precio": "600"
+            },
+            {
+                "id": "a-3",
+                "nombre": "Audifonos Mikto",
+                "imagen": "build\\img\\audifonos3.webp",
+                "precio": "399"
+            },
+            {
+                "id": "a-4",
+                "nombre": "Audifonos UserSw",
+                "imagen": "build\\img\\audifonos4.webp",
+                "precio": "199"
+            },
+            {
+                "id": "a-5",
+                "nombre": "Audifonos Waterproof",
+                "imagen": "build\\img\\audifonos5.webp",
+                "precio": "2999"
+            }
+        ],
+        "televisiones": [
+            {
+                "id": "tv-1",
+                "nombre": "TV LG 200",
+                "imagen": "build\\img\\tv1.webp",
+                "precio": "6920"
+            },
+            {
+                "id": "tv-2",
+                "nombre": "TV Eco-200",
+                "imagen": "build\\img\\tv2.webp",
+                "precio": "9943"
+            },
+            {
+                "id": "tv-3",
+                "nombre": "TV Apple-DF",
+                "imagen": "build\\img\\tv3.webp",
+                "precio": "1952"
+            },
+            {
+                "id": "tv-4",
+                "nombre": "TV HK-900",
+                "imagen": "build\\img\\tv4.webp",
+                "precio": "4200"
+            },
+            {
+                "id": "tv-5",
+                "nombre": "TV XP-302",
+                "imagen": "build\\img\\tv5.webp",
+                "precio": "10000"
+            }        
+        ],
+        "tablets": [
+            {
+                "id": "Tablet-1",
+                "nombre": "Tablet Smart-One",
+                "imagen": "build\\img\\tablet1.webp",
+                "precio": "999"
+            },
+            {
+                "id": "Tablet-2",
+                "nombre": "Tablet Apple-Md",
+                "imagen": "build\\img\\tablet2.webp",
+                "precio": "6999"
+            },
+            {
+                "id": "Tablet-3",
+                "nombre": "Tablet Oyonto-SP",
+                "imagen": "build\\img\\tablet3.webp",
+                "precio": "899"
+            },
+            {
+                "id": "Tablet-4",
+                "nombre": "Tablet Samsong",
+                "imagen": "build\\img\\tablet4.webp",
+                "precio": "4999"
+            },
+            {
+                "id": "Tablet-5",
+                "nombre": "TV Orange-RW",
+                "imagen": "build\\img\\tablet5.webp",
+                "precio": "1999"
+            }        
+        ],
+        "consolas": [
+            {
+                "id": "consola-1",
+                "nombre": "Nintendo Pro",
+                "imagen": "build\\img\\consola1.webp",
+                "precio": "7999"
+            },
+            {
+                "id": "consola-2",
+                "nombre": "Xbox One-Series",
+                "imagen": "build\\img\\consola2.webp",
+                "precio": "5699"
+            },
+            {
+                "id": "consola-3",
+                "nombre": "PlayStation 5",
+                "imagen": "build\\img\\consola3.webp",
+                "precio": "10999"
+            },
+            {
+                "id": "consola-4",
+                "nombre": "PSP Oxhi",
+                "imagen": "build\\img\\consola4.webp",
+                "precio": "3999"
+            },
+            {
+                "id": "consola-5",
+                "nombre": "Xbox One-Black",
+                "imagen": "build\\img\\consola5.webp",
+                "precio": "5999"
+            }        
+        ]
+    }
+}

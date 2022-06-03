@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../build/css/app.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <title>Shopping</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top fixed-top">
+        <div class="container-fluid d-flex justify-content-evenly">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">SHOPPING</a>
+
+            <div class="icons-wrapper d-flex justify-content-between w-25">
+                <div class="nav-item__cart">
+                <a href="./carrito.html" class="cart-link">
+                    <i class='bx bx-cart'></i>
+                </a>
+                <i class='bx bx-cart' id="cart-icon"></i>
+                    <div class="cart" id="cart">
+                        <div class="cart__wrapper">
+                            <div class="cart-item-wrapper">
+                            </div>
+                        </div>
+                        <div class="cart__btn-container">
+                            <button class="btn btn-dark"><a href="carrito.html">Ver Carrito</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item__wish">
+                <a href="./lista.html" class="wish-link">
+                    <i class='bx bx-heart'></i>
+                </a>
+                <i class='bx bx-heart' id="wish-icon"></i>
+                    <div class="wish" id="wish">
+                        <div class="wish__wrapper">
+                            <div class="wish-item-wrapper">
+                            </div>
+                        </div>
+                        <div class="wish__btn-container">
+                            <button class="btn btn-dark"><a href="lista.html">Ver Lista</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="audifonos.html">Audifonos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tablets.html">Tablets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="telefonos.html">Telefonos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="laptops.html">Laptops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tv.html">TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consolas.html">Consolas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero__wrapper">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item__wrapper">
+                            <div class="carousel-item__title-wrapper">
+                                <h1 class="carousel-item__title">Preparate para el regreso a clases</h1>
+                            </div>
+                            <div class="carousel-item__body-wrapper">
+                                <p class="carousel-item__body-p">Este regreso a clases, llega estrenando lo mejor en
+                                    telefonos y demas...</p>
+                                <button class="carousel-item__body-btn btn btn-dark"><a href="#">Comprar
+                                        ahora</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__wrapper">
+                            <div class="carousel-item__title-wrapper">
+                                <h1 class="carousel-item__title">Estrenos de Verano</h1>
+                            </div>
+                            <div class="carousel-item__body-wrapper">
+                                <p class="carousel-item__body-p">Los estrenos no se hacen esperar en verano, ven y
+                                    adquire tu tablet a mitad de precio</p>
+                                <button class="carousel-item__body-btn btn btn-dark"><a href="#">Comprar
+                                        ahora</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item__wrapper">
+                            <div class="carousel-item__title-wrapper">
+                                <h1 class="carousel-item__title">Lo mas trending</h1>
+                            </div>
+                            <div class="carousel-item__body-wrapper">
+                                <p class="carousel-item__body-p">Estrena lo ultimo en moda tecnologica en nuestra
+                                    seccion de portatiles</p>
+                                <button class="carousel-item__body-btn btn btn-dark"><a href="#">Comprar
+                                        ahora</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="type-section">
+            <div class="type-section__wrapper">
+                <div class="section" data-id="section-audifonos">
+                    <a href="audifonos.html">
+                        <div class="section__wrapper">
+                            <h2>Audifonos</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="section" data-id="section-laptops">
+                    <a href="laptops.html">
+                        <div class="section__wrapper">
+                            <h2>Laptops</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="section" data-id="section-telefonos">
+                    <a href="telefonos.html">
+                        <div class="section__wrapper">
+                            <h2>Telefonos</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="section" data-id="section-tablets">
+                    <a href="tablets.html">
+                        <div class="section__wrapper">
+                            <h2>Tablets</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="section" data-id="section-tv">
+                    <a href="tv.html">
+                        <div class="section__wrapper">
+                            <h2>TV</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="section" data-id="section-consolas">
+                    <a href="consolas.html">
+                        <div class="section__wrapper">
+                            <h2>Consolas</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-section container-fluid">
+            <div class="trending-section__wrapper">
+                <div class="trending-section__title-wrapper">
+                    <h2 class="trending-section__title">Trending de la Semana</h2>
+                </div>
+                <div class="trending-section__body-wrapper">
+                </div>
+
+                <div id="ver-mas-trending" class="collapse">
+                    <div class="trending-section__body-wrapper ver-mas-trending__body-wrapper">
+                    </div>
+                </div>
+                
+                <a href="#ver-mas-trending" data-bs-toggle="collapse" class="btn btn-primary ver-mas-btn">Ver Mas</a>
+
+                <!--COLLAPSE-TRENDING-->
+            </div>
+        </section>
+
+        <section class="offer-section container-fluid">
+            <div class="offer-section__wrapper">
+                <div class="offer-section__title-wrapper">
+                    <h2 class="offer-section__title">Super Rebajas</h2>
+                </div>
+                <div class="offer-section__body-wrapper">
+                    <p class="offer-section__body">Obten un descuento del 50% en tu segunda compra semanal, valido de
+                        lunes a viernes</p>
+                </div>
+                <div class="offer-section__btn-wrapper">
+                    <button class="offer-section__btn btn btn-primary"><a href="#">Saber mas</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-section container-fluid">
+            <div class="new-section__wrapper">
+                <div class="new-section__title-wrapper">
+                    <h2 class="new-section__title">Lo Nuevo de la Semana</h2>
+                </div>
+                <div class="new-section__body-wrapper">
+                </div>
+            </div>
+        </section>
+
+        <section class="offer-section container-fluid">
+            <div class="offer-section__wrapper">
+                <div class="offer-section__title-wrapper">
+                    <h2 class="offer-section__title">Venta Nocturna</h2>
+                </div>
+                <div class="offer-section__body-wrapper">
+                    <p class="offer-section__body">Ven y asiste a nuestra venta Nocturna y llevate increibles
+                        descuentos</p>
+                </div>
+                <div class="offer-section__btn-wrapper">
+                    <button class="offer-section__btn btn btn-primary"><a href="#">Saber mas</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews container-fluid">
+            <h3 class="text-center reviews__title">Reviews</h3>
+            <div class="reviews__wrapper">
+                <div class="review-item">
+                    <div class="review-item__img-wrapper">
+                        <img class="review-item__img" src="./build/img/testigo1.webp">
+                    </div>
+                    <div class="review-item__name-wrapper">
+                        <h3 class="review-item__name">Katerine Oslosw</h3>
+                    </div>
+                    <div class="review-item__rate-wrapper">
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                    </div>
+                    <div class="review-item__description-wrapper">
+                        <p class="review-item__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Nulla rerum quas molestiae voluptatem ducimus illo maxime velit minus veniam assumenda.</p>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-item__img-wrapper">
+                        <img class="review-item__img" src="./build/img/testigo2.webp">
+                    </div>
+                    <div class="review-item__name-wrapper">
+                        <h3 class="review-item__name">Kenia Lops</h3>
+                    </div>
+                    <div class="review-item__rate-wrapper">
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                    </div>
+                    <div class="review-item__description-wrapper">
+                        <p class="review-item__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Nulla rerum quas molestiae voluptatem ducimus illo maxime velit minus veniam assumenda.</p>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-item__img-wrapper">
+                        <img class="review-item__img" src="./build/img/testigo3.webp">
+                    </div>
+                    <div class="review-item__name-wrapper">
+                        <h3 class="review-item__name">Erick Gomez</h3>
+                    </div>
+                    <div class="review-item__rate-wrapper">
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                        <i class='bx bxs-star' style='color:#ffee03'></i>
+                    </div>
+                    <div class="review-item__description-wrapper">
+                        <p class="review-item__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Nulla rerum quas molestiae voluptatem ducimus illo maxime velit minus veniam assumenda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog container-fluid">
+            <h3 class="text-center blog__title">Nuestro Blog</h3>
+            <div class="blog__wrapper">
+                <div class="blog-item">
+                    <div class="blog-item__img-wrapper">
+                        <img src="./build/img/blog1.webp" alt="img-blog" class="blog-item-img">
+                    </div>
+                    <div class="blog-item__body-wrapper">
+                        <div class="blog-item__title-wrapper">
+                            <h3 class="blog-item__title">El trabajo en equipo</h3>
+                        </div>
+                        <div class="blog-item__text-wrapper">
+                            <p class="blog-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                nostrum nemo pariatur error optio modi atque fugit est a odio.</p>
+                            <div class="collapse" id="article1">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime, voluptatem
+                                    nulla necessitatibus obcaecati debitis et, tenetur optio ex quidem rerum ducimus
+                                    quis totam, non quo nobis asperiores rem ea dolorem repellat. Non omnis earum fugit
+                                    quis ipsa repudiandae reprehenderit explicabo odit cupiditate doloremque rem
+                                    voluptatibus laborum sequi quos commodi, corporis quo consequatur maiores cum
+                                    adipisci dolorum excepturi tempore. Iste, omnis. Dolore illum obcaecati ducimus
+                                    officia, illo assumenda perspiciatis nisi incidunt doloremque ut iure aliquam
+                                    tenetur tempora voluptatum aut eligendi quia minima quam numquam optio odit maxime!
+                                    Quia sed mollitia ad voluptatibus maxime dolorum, voluptate at in est accusamus
+                                    laudantium.</p>
+                            </div>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#article1" aria-expanded="false" aria-controls="article1">
+                                Leer mas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+                    <div class="blog-item__img-wrapper">
+                        <img src="./build/img/blog2.webp" alt="img-blog" class="blog-item-img">
+                    </div>
+                    <div class="blog-item__body-wrapper">
+                        <div class="blog-item__title-wrapper">
+                            <h3 class="blog-item__title">La importancia de un espacio limpio</h3>
+                        </div>
+                        <div class="blog-item__text-wrapper">
+                            <p class="blog-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                nostrum nemo pariatur error optio modi atque fugit est a odio.</p>
+                            <div class="collapse" id="article2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime, voluptatem
+                                    nulla necessitatibus obcaecati debitis et, tenetur optio ex quidem rerum ducimus
+                                    quis totam, non quo nobis asperiores rem ea dolorem repellat. Non omnis earum fugit
+                                    quis ipsa repudiandae reprehenderit explicabo odit cupiditate doloremque rem
+                                    voluptatibus laborum sequi quos commodi, corporis quo consequatur maiores cum
+                                    adipisci dolorum excepturi tempore. Iste, omnis. Dolore illum obcaecati ducimus
+                                    officia, illo assumenda perspiciatis nisi incidunt doloremque ut iure aliquam
+                                    tenetur tempora voluptatum aut eligendi quia minima quam numquam optio odit maxime!
+                                    Quia sed mollitia ad voluptatibus maxime dolorum, voluptate at in est accusamus
+                                    laudantium.</p>
+                            </div>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#article2" aria-expanded="false" aria-controls="article2">
+                                Leer mas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+                    <div class="blog-item__img-wrapper">
+                        <img src="./build/img/blog3.webp" alt="img-blog" class="blog-item-img">
+                    </div>
+                    <div class="blog-item__body-wrapper">
+                        <div class="blog-item__title-wrapper">
+                            <h3 class="blog-item__title">Tecnologia ¿Admirar o Temer?</h3>
+                        </div>
+                        <div class="blog-item__text-wrapper">
+                            <p class="blog-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                nostrum nemo pariatur error optio modi atque fugit est a odio.</p>
+                            <div class="collapse" id="article3">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime, voluptatem
+                                    nulla necessitatibus obcaecati debitis et, tenetur optio ex quidem rerum ducimus
+                                    quis totam, non quo nobis asperiores rem ea dolorem repellat. Non omnis earum fugit
+                                    quis ipsa repudiandae reprehenderit explicabo odit cupiditate doloremque rem
+                                    voluptatibus laborum sequi quos commodi, corporis quo consequatur maiores cum
+                                    adipisci dolorum excepturi tempore. Iste, omnis. Dolore illum obcaecati ducimus
+                                    officia, illo assumenda perspiciatis nisi incidunt doloremque ut iure aliquam
+                                    tenetur tempora voluptatum aut eligendi quia minima quam numquam optio odit maxime!
+                                    Quia sed mollitia ad voluptatibus maxime dolorum, voluptate at in est accusamus
+                                    laudantium.</p>
+                            </div>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#article3" aria-expanded="false" aria-controls="article3">
+                                Leer mas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscription container-fluid">
+            <div class="subscription__wrapper">
+                <form class="subscription__form">
+                    <legend>Suscribete a nuestro boletion de noticias</legend>
+                    <fieldset>
+                        <input type="email" placeholder="Tu email" required class="boletin-input">
+                        <input type="submit" class="btn btn-primary">
+                    </fieldset>
+                </form>
+                <img src="./build/img/PR_Two Color.webp" alt="boltein-img">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__tags">
+                <div class="footer__tag">
+                    <div class="footer__tag-header-wrapper">
+                        <h3><a class="footer__ta-header">Sobre Nosotros</a></h3>
+                    </div>
+                    <div class="footer__tag-body-wrapper">
+                        <p class="footer__tag-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                            eligendi hic, maiores ipsa deserunt esse?</p>
+                    </div>
+                </div>
+                <div class="footer__tag">
+                    <div class="footer__tag-header-wrapper">
+                        <h3 class="footer__ta-header">Ayuda</h3>
+                    </div>
+                    <div class="footer__tag-body-wrapper">
+                        <ul>
+                            <li><a href="#">Politica de Privacidad</a></li>
+                            <li><a href="#">Terminos y Condiciones</a></li>
+                            <li><a href="#">Como comprar</a></li>
+                            <li><a href="#">Carrito de Compra</a></li>
+                            <li><a href="#">Sobre la tienda</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__tag">
+                    <div class="footer__tag-header-wrapper">
+                        <h3 class="footer__ta-header">Metodos de Pagar</h3>
+                    </div>
+                    <div class="footer__tag-body-wrapper">
+                        <i class='bx bxl-visa' style='color:#ffffff'></i>
+                        <i class='bx bxl-mastercard' style='color:#ffffff'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="text-start">SHOPPING &copy; Todos los derecho reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>

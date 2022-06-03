@@ -1,0 +1,79 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.hero {
+
+    .carousel-item {
+        background: linear-gradient(90deg, rgba(130,130,130,0.5) 0%, rgba(130,130,130,0.5) 100%), url(/build/img/carousel1.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem;
+        min-height: 20rem;
+
+        @include m.tablet {
+            min-height: 100vh;
+        }
+
+        .carousel-item__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+    
+            h1.carousel-item__title {
+                text-align: center;
+                color: v.$blanco;
+                font-weight: 700;
+
+                @include m.desktop {
+                    font-size: 3rem;
+                }
+            }
+
+            p.carousel-item__body-p {
+                color: v.$blanco;
+
+                @include m.desktop {
+                    font-size: 2rem;
+                }
+            }
+
+            button {
+                @include m.desktop {
+                    justify-self: center;
+                    align-self: center;
+                    width: 30rem;
+                }
+            }
+    
+            .carousel-item__body-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    .carousel-item:nth-of-type(2) {
+        background: linear-gradient(90deg, rgba(130,130,130,0.5) 0%, rgba(130,130,130,0.5) 100%), url(/build/img/carousel2.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .carousel-item:nth-of-type(3) {
+        background: linear-gradient(90deg, rgba(130,130,130,0.5) 0%, rgba(130,130,130,0.5) 100%), url(/build/img/carousel3.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    a {
+        text-decoration: none;
+        color: v.$blanco;
+    }
+}
